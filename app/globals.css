@@ -1,0 +1,23 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    h1{
+        @apply text-4xl text-gray-800 font-extrabold m-2
+    }
+}
+@layer components{
+    .container-me{
+        @apply container
+    }
+    .flexCenter{
+        @apply flex justify-center items-center
+    }
+    .btn{
+        @apply px-6 py-2 rounded-sm bg-gray-800 text-white hover:bg-gray-900  transition-all duration-300 m-3
+    }
+    .btn-remove{
+         @apply px-6 py-2 rounded-sm bg-rose-800 text-white hover:bg-rose-900  transition-all duration-300 m-3
+    }
+}
